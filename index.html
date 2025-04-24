@@ -1,1 +1,45 @@
-<h1>All Paths Lead To Space</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Paths Lead to Space</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>All Paths Lead to Space</h1>
+        <p>Choose your career path in space exploration.</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <p>Welcome to the space career decision guide!</p>
+            <button onclick="startJourney()">Start Your Journey</button>
+        </section>
+
+        <section id="paths" class="hidden">
+            <h2>Choose Your University Major</h2>
+            <button onclick="choosePath('STEM')">STEM</button>
+            <button onclick="choosePath('ArtsAndDesign')">Arts & Design</button>
+            <button onclick="choosePath('Marcomm')">Marcomm/Journalism</button>
+            <button onclick="choosePath('Military')">Military</button>
+            <button onclick="choosePath('LifeSciences')">Life Sciences</button>
+            <button onclick="choosePath('LawPolicy')">Law & Policy</button>
+            <button onclick="choosePath('SocialSciences')">Social Sciences</button>
+        </section>
+
+        <section id="result" class="hidden">
+            <h2 id="resultTitle"></h2>
+            <p id="resultDescription"></p>
+            <button onclick="resetJourney()">Start Over</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created as part of the Science Communication course 2025 at KU Leuven</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
